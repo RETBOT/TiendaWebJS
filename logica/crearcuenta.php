@@ -68,7 +68,6 @@ include '../templates/session.php';
     <?php } ?>
 
 
-
     <?php
           $sentencia=$pdo->prepare("Select * from tblproductos");
           $sentencia->execute();
@@ -78,71 +77,29 @@ include '../templates/session.php';
 
 <h1>Crear cuenta</h1>
         <div class="grid"> 
-        <center></center><table style="border-collapse: collapse;  border-spacing: 10px 5px;"  border="5"  bordercolor="#1FC52E">
-            <form method="post" action="registro.php" class="formulario" id="formulario" >
+        <center></center>
+        <table style="border-collapse: collapse;  border-spacing: 10px 5px;"  width="700" border="5"  bordercolor="#1FC52E">
+            <form method="post" action="registro.php" class="formulario" id="formulario" onsubmit = "return validar();">
                 <tr>
-                <td style="width: 50%;"><h3>Corrreo electronico: </h3></td>
-                    <td style="width: 50%;"><input type="text" placeholder="Correo electronico" name="usuario" required></td>
+                <td><h3>Corrreo electronico: </h3></td>
+                    <td><input type="email" style="width:100%;" placeholder="Correo electronico" name="usuario" id="usuario"></td>
                 </tr>
                 <tr>
-                <td style="width: 50%;"><h3>Contraseña: </h3></td>  
-                    <td style="width: 50%;"><input type="password" placeholder="Contraseña" name="clave" required></td> 
+                <td><h3>Contraseña: </h3></td>  
+                    <td><input type="password" style="width:100%;" placeholder="La contraseña debe contener entre 8 y 12 caracteres" name="clave" id="clave" > 
                 </tr>
                 <tr>
-                    <td style="width: 50%;"><h3>Nombre: </h3></td>
-                    <td style="width: 50%;"><input type="text" placeholder="Nombre de usuario" autofocus="1" name="nombre" required></td> 
+                    <td><h3>Nombre: </h3></td>
+                    <td><input type="text" style="width:100%;" placeholder="Nombre y apellido" autofocus="1" name="nombre" id="nombre" ></td> 
                 </tr>
                 <tr>
-                <td colspan="2"><center><button style="width: 60%; border-radius: 1rem;" class="formulario__submit" type="submit" >Crear cuenta</button></center></td>
+                <td colspan="2"><center><button style="width: 60%; border-radius: 1rem;" class="formulario__submit" type="submit">Crear cuenta</button></center></td>
                 </tr>
             </form>
+            
+            <script src="../js/formulario.js"></script>
         </table>
         </div>
-        <main>
-		<form action="" class="formulario" id="formulario">
-			<!-- Grupo: Nombre -->
-			<div class="formulario__grupo" id="grupo__nombre">
-				<label for="nombre" class="formulario__label">Nombre</label>
-				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
-					<i class="formulario__validacion-estado fas fa-times-circle"></i>
-				</div>
-				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
-			</div>
-
-
-			<!-- Grupo: Correo Electronico -->
-			<div class="formulario__grupo" id="grupo__correo">
-				<label for="correo" class="formulario__label">Correo Electrónico</label>
-				<div class="formulario__grupo-input">
-					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
-					<i class="formulario__validacion-estado fas fa-times-circle"></i>
-				</div>
-				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
-			</div>
-
-			<!-- Grupo: Teléfono -->
-			<div class="formulario__grupo" id="grupo__telefono">
-				<label for="telefono" class="formulario__label">Teléfono</label>
-				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
-					<i class="formulario__validacion-estado fas fa-times-circle"></i>
-				</div>
-				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
-			</div>
-
-			<div class="formulario__mensaje" id="formulario__mensaje">
-				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
-			</div>
-
-			<div class="formulario__grupo formulario__grupo-btn-enviar">
-				<button type="submit" class="formulario__btn">Enviar</button>
-				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
-			</div>
-		</form>
-	</main>
-
-	<script src="js/formulario.js"></script>
 
 <?Php 
 include '../templates/pie.php';
