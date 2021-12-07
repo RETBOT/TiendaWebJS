@@ -1,0 +1,7 @@
+Base de datos usada en el proyecto
+Importar en el servidor
+Codigo en 000WebHost: https://videogamesstore.000webhostapp.com/index.php
+
+Administrador de la pagina 
+correo:  admin@correo.com
+contraseña: password
