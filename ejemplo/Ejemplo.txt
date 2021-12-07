@@ -1,0 +1,22 @@
+ID
+21
+
+Nombre
+JUMP FORCE
+
+Descripcion 
+Los héroes más famosos del manga se encuentran en un campo de batalla totalmente nuevo: nuestro mundo. Con el destino de la humanidad en sus manos, la Jump Force se unirá para combatir la amenaza más peligrosa.
+Crea tu propio avatar y entra al original modo Historia para luchar junto a los héroes más poderosos de Dragon Ball Z, One Piece, Naruto, Bleach, Cazador X, Yu-Gi-Oh!, Yu Yu Hakusho, Los Caballeros del Zodíaco y muchos más.
+O dirígete al vestíbulo en línea para desafiar a otros jugadores y descubrir muchísimos modos y actividades.
+
+Precio
+1220.54
+
+Cantidad
+1
+
+imagen
+../img/21.jpg
+
+Disponible 
+300
