@@ -11,13 +11,58 @@ include 'templates/cabeceraPrincipal.php';
 
                 <p>Mediante la preservación de los juegos, estamos intentando preservar la historia. Observando la historia, podemos comprender mejor el presente y vislumbrar el futuro. 
                 </p>
-            </div>
-            <img class="nosotros__imagen" src="img/nosotros.jpg" alt="imagen nosotros">
         </div>
+
+        <div class="slideshow">
+		<ul class="slider">
+			<li>
+				<img src="img/nosotros1.jpg" alt="imagen nosotros">
+				<section class="caption">
+					<h1>Lo mejor de dos mundos.</h1>
+					<p><br><br>Manejamos productos de xbox y playstation.</p>
+				</section>
+			</li>
+			<li>
+				<img src="img/nosotros2.jpg" alt="imagen nosotros">
+				<section class="caption">
+					<h1>Xbox</h1>
+					<p>Los mejores videojuegos de una de las más grandes compañías.</p>
+				</section>
+			</li>
+			<li>
+				<img src="img/nosotros3.jpg" alt="imagen nosotros">
+				<section class="caption">
+					<h1>Play Station</h1>
+					<p>Los mejores videojuegos de una de las más grandes compañías.</p>
+				</section>
+			</li>
+			<li>
+				<img src="img/nosotros4.jpg" alt="">
+				<section class="caption">
+					<h1>Xbox y Play Station</h1>
+					<p>La mejor combinación del mundo, los más grandes lanzamientos del año.</p>
+				</section>
+			</li>
+		</ul>
+
+		<ol class="pagination">
+		</ol>
+	
+		<div class="left">
+			<span class="fa fa-chevron-left"></span>
+		</div>
+
+		<div class="right">
+			<span class="fa fa-chevron-right"></span>
+		</div>
+
+	    </div>
+    </div>
+
     </main>
 
-    <section class="contenedor comprar">
-        <h2 class="comprar__titulo">¿Porqué Comprar con nosotros?</h2>
+    <section class="contenedor comprar"> 
+        <h2 class="comprar__titulo"><br>¿Porqué Comprar con nosotros?</h2>
 
         <div class="bloques">
             <div class="bloque">

@@ -10,7 +10,11 @@ include 'templates/session.php';
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="shortcut icon" href="img/icono.png">
+    <script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/main.js"></script>
+
 </head>
 
 <body>
