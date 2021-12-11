@@ -43,7 +43,7 @@
                             <form action="pagar.php" method="post">
                             <div>
                                 <label for="my-input">Correo de contacto:</label>
-                                <input required id="email" name="email" type="email" pattern="/^[A-z0-9\\._-]+@[A-z0-9][A-z0-9-]*(\\.[A-z0-9_-]+)*\\.([A-z]{2,6})$/" placeholder="Por favor escribe tú correo" style="width: 30%;">
+                                <input required id="email" name="email" type="email" placeholder="Por favor escribe tú correo" style="width: 30%;">
                                 <small id="emailHelp" class="form-text text-muted">
                                         <br>Los productos se enviarán a este correo.
                                 </small>
