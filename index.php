@@ -9,7 +9,6 @@ $sentencia->execute();
 $listProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
 //print_r($listProductos);
 ?>
-
     <main class="contenedor">
         <h1>Nuestros Productos</h1>
         <div class="grid">
@@ -26,8 +25,6 @@ $listProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
                 </form> 
         </div>  <!--.producto-->
         <?php } ?>
-
-
             <div class="grafico grafico--xbox"></div>
             <div class="grafico grafico--ps4"></div>
         </div>
