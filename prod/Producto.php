@@ -6,7 +6,7 @@ include '../templates/includes.php';
 <?php
           $IDJuego = $_POST['IDJuego'];
           $sentencia=$pdo->prepare("Select * from tblproductos where ID=:ID");
-          $sentencia->bindParam(":ID", $IDJuego);
+          $sentencia->bindParam(":ID", $IDJuego);        
           $sentencia->execute();
           $listProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
 ?>
