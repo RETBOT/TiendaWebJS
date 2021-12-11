@@ -3,6 +3,7 @@ include 'templates/cabeceraPrincipal.php';
 include 'global/config.php';
 include 'global/conexion.php';
 ?>
+
 <?php
 $sentencia=$pdo->prepare("Select * from tblproductos");
 $sentencia->execute();
