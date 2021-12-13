@@ -15,7 +15,7 @@ function validar(){
 	}else if(!correoRegex.test(correoElectronico)){
 			alert("Ingresa un correo valido");
 			return false;
-	}else if(contraseña.length > 8 || contraseña.length < 12){
+	}else if(contraseña.length > 12 || contraseña.length < 8){
 		alert("La contraseña es incorrecta");
 		return false;
 	}else if(!contraseñaRegex.test(contraseña)){
